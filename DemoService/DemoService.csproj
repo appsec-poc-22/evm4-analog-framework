@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      STAGE 1 and 2: project reference (framework source is visible).
+      STAGE 3: comment this out and use the PackageReference below instead,
+               after packing DemoFramework to a local feed. That is the
+               configuration that matches EVM4.
+    -->
+    <ProjectReference Include="..\DemoFramework\DemoFramework.csproj" />
+    <!-- <PackageReference Include="DemoFramework" Version="1.0.0" /> -->
+  </ItemGroup>
+
+</Project>
